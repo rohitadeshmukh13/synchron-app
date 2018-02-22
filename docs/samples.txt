@@ -1,0 +1,244 @@
+1. POST a new sensor:
+A] IoT Broker:
+HTTP POST http://localhost:8060/ngsi10/updateContext
+Content-Type:application/json
+Request body JSON:
+{
+    "updateAction": "APPEND",
+    "contextElements": [{
+        "entityId": {
+            "id": "noiseSensor5",
+            "type": "NoiseSensor",
+            "isPattern": false
+        },
+        "attributes": [{
+            "name": "noiselevel",
+            "type": "float",
+            "contextValue": "65",
+            "metadata": [{
+                "name": "units",
+                "type": "units",
+                "value": "dB"
+            }]
+        }]
+    }]
+}
+
+B] Synchron App
+HTTP POST http://localhost:8080/createEntity
+Content-Type:application/json
+Request body JSON:
+(1)
+{  
+   "updateAction":"APPEND",
+   "contextElements":[  
+      {  
+         "entityId":{  
+            "id":"http://project-hobbit.eu/resources/debs2017#Observation_1",
+            "type":"http://www.agtinternational.com/ontologies/I4.0#MoldingMachineObservation",
+            "isPattern":false
+         },
+         "attributes":[  
+            {  
+               "name":"http://purl.oclc.org/NET/ssnx/ssn#observedProperty",
+               "type":"http://purl.oclc.org/NET/ssnx/ssn#observedProperty",
+               "contextValue":"http://www.agtinternational.com/ontologies/WeidmullerMetadata#_59_12",
+               "metadata":[  
+
+               ]
+            },
+            {  
+               "name":"http://purl.oclc.org/NET/ssnx/ssn#observationResult",
+               "type":"http://purl.oclc.org/NET/ssnx/ssn#observationResult",
+               "contextValue":"http://project-hobbit.eu/resources/debs2017#Output_0",
+               "metadata":[  
+
+               ]
+            }
+         ]
+      }
+   ]
+}
+(2) with metadata
+{  
+   "updateAction":"APPEND",
+   "contextElements":[  
+      {  
+         "entityId":{  
+            "id":"http://project-hobbit.eu/resources/debs2017#Value_1",
+            "type":"http://www.agtinternational.com/ontologies/I4.0#NumberValue",
+            "isPattern":false
+         },
+         "attributes":[  
+            {  
+               "name":"http://www.agtinternational.com/ontologies/IoTCore#valueLiteral",
+               "type":"http://www.agtinternational.com/ontologies/IoTCore#valueLiteral",
+               "contextValue":"9433.11",
+               "metadata":[  
+                  {  
+                     "name":"http://www.w3.org/2001/XMLSchema#double",
+                     "type":"http://www.w3.org/2001/XMLSchema#double",
+                     "value":"http://www.w3.org/2001/XMLSchema#double"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
+
+---------------------------------------------------------------------------------------------------------
+2. Get Sensors and data: IoT Broker
+HTTP POST http://localhost:8060/ngsi10/queryContext
+Content-Type:application/json
+Accept:application/json
+
+(1) Machine_59
+Request body JSON:
+{
+    "entities": [{
+        "id": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#Machine_59",
+        "type": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#MoldingMachine",
+        "isPattern": false
+    }]
+}
+
+Response:
+{
+    "errorCode": null,
+    "contextResponses": [
+        {
+            "contextElement": {
+                "entityId": {
+                    "id": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#Machine_59",
+                    "type": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#MoldingMachine",
+                    "isPattern": false
+                },
+                "attributeDomainName": null,
+                "domainMetadata": [],
+                "attributes": [
+                    {
+                        "name": "http://www.agtinternational.com/ontologies/IoTCore#hasModel",
+                        "type": "http://www.agtinternational.com/ontologies/IoTCore#hasModel",
+                        "contextValue": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#MachineModel_59",
+                        "metadata": []
+                    }
+                ]
+            },
+            "statusCode": {
+                "code": 200,
+                "reasonPhrase": "OK",
+                "details": "OK"
+            }
+        }
+    ]
+}
+
+(2) Observation_0
+Request body JSON:
+{
+    "entities": [{
+        "id": "http://project-hobbit.eu/resources/debs2017#Observation_0",
+        "isPattern": false,
+        "type" : "http://www.agtinternational.com/ontologies/I4.0#MoldingMachineObservation"
+    }]
+}
+
+Response:
+{
+    "errorCode": null,
+    "contextResponses": [
+        {
+            "contextElement": {
+                "entityId": {
+                    "id": "http://project-hobbit.eu/resources/debs2017#Observation_0",
+                    "type": "http://www.agtinternational.com/ontologies/I4.0#MoldingMachineObservation",
+                    "isPattern": false
+                },
+                "attributeDomainName": null,
+                "domainMetadata": [],
+                "attributes": [
+                    {
+                        "name": "http://purl.oclc.org/NET/ssnx/ssn#observedProperty",
+                        "type": "http://purl.oclc.org/NET/ssnx/ssn#observedProperty",
+                        "contextValue": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#_59_12",
+                        "metadata": []
+                    },
+                    {
+                        "name": "http://purl.oclc.org/NET/ssnx/ssn#observationResult",
+                        "type": "http://purl.oclc.org/NET/ssnx/ssn#observationResult",
+                        "contextValue": "http://project-hobbit.eu/resources/debs2017#Output_0",
+                        "metadata": []
+                    }
+                ]
+            },
+            "statusCode": {
+                "code": 200,
+                "reasonPhrase": "OK",
+                "details": "OK"
+            }
+        }
+    ]
+}
+
+---------------------------------------------------------------------------------------------------------
+3. Synchron App: Get Sensors
+HTTP GET http://localhost:8080/getSensors
+Response:
+[
+    "http://www.agtinternational.com/ontologies/WeidmullerMetadata#Machine_59"
+]
+
+---------------------------------------------------------------------------------------------------------
+4. Synchron App: Get Sensor Data (can also be called from the UI: [http://localhost:8080/sensorData.html])
+HTTP POST http://localhost:8080/getSensorData
+Content-Type:application/json
+Accept:application/json
+Request Body JSON:
+{
+	"sensor"	:	"http://www.agtinternational.com/ontologies/WeidmullerMetadata#Machine_59",
+	"timestamp1"	:	"\"2016-01-01T01:00:01+01:00\"^^xsd:dateTime",
+	"timestamp2"	:	"\"2018-01-01T01:00:01+01:00\"^^xsd:dateTime"
+}
+
+Sample Response:
+[
+    {
+        "observationResult": "19.9^^http://www.w3.org/2001/XMLSchema#double",
+        "observedProperty": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#_59_37"
+    },
+    {
+        "observationResult": "6.98^^http://www.w3.org/2001/XMLSchema#double",
+        "observedProperty": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#_59_46"
+    },
+    {
+        "observationResult": "0.0^^http://www.w3.org/2001/XMLSchema#double",
+        "observedProperty": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#_59_103"
+    },
+    {
+        "observationResult": "20.71^^http://www.w3.org/2001/XMLSchema#double",
+        "observedProperty": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#_59_82"
+    },
+    {
+        "observationResult": "0.58^^http://www.w3.org/2001/XMLSchema#double",
+        "observedProperty": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#_59_28"
+    },
+    {
+        "observationResult": "5.74^^http://www.w3.org/2001/XMLSchema#double",
+        "observedProperty": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#_59_84"
+    },
+    {
+        "observationResult": "31.18^^http://www.w3.org/2001/XMLSchema#double",
+        "observedProperty": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#_59_77"
+    },
+....................
+....................
+    {
+        "observationResult": "36.57^^http://www.w3.org/2001/XMLSchema#double",
+        "observedProperty": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#_59_87"
+    },
+    {
+        "observationResult": "5.16^^http://www.w3.org/2001/XMLSchema#double",
+        "observedProperty": "http://www.agtinternational.com/ontologies/WeidmullerMetadata#_59_27"
+    }
+]

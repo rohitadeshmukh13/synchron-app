@@ -1,0 +1,85 @@
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix debs2017: <http://project-hobbit.eu/resources/debs2017#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix voaf:  <http://purl.org/vocommons/voaf#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix I4.0:  <http://www.agtinternational.com/ontologies/I4.0#> .
+@prefix ssn:   <http://www.w3.org/ns/ssn/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix WeidmullerMetadata: <http://www.agtinternational.com/ontologies/WeidmullerMetadata#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix DEBSAnalyticResults: <http://www.agtinternational.com/ontologies/DEBSAnalyticResults#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix ssnOld: <http://purl.oclc.org/NET/ssnx/ssn#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix IoTCore: <http://www.agtinternational.com/ontologies/IoTCore#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix sosa:  <http://www.w3.org/ns/sosa/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+
+#Entity
+debs2017:ObservationGroup_0
+        a                             I4.0:MoldingMachineObservationGroup ;
+        ssnOld:observationResultTime  debs2017:Timestamp_0 ;
+        I4.0:contains                 debs2017:Observation_0 ;
+        I4.0:machine                  WeidmullerMetadata:Machine_59 ;
+        I4.0:observedCycle            debs2017:Cycle_0 .
+
+#Attributes:
+#1
+
+debs2017:Timestamp_0  a       IoTCore:Timestamp ;
+        IoTCore:valueLiteral  "2017-01-01T01:00:01+01:00"^^xsd:dateTime .
+
+#2
+
+debs2017:Observation_0
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_0 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_12 .
+
+#2.1
+########>
+	debs2017:Output_0  a     ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_0 .
+
+################>	
+		debs2017:Value_0  a           I4.0:NumberValue ;
+	        IoTCore:valueLiteral  "9433.11"^^xsd:double .
+
+#2.2
+########>
+	WeidmullerMetadata:_59_12
+		a       WeidmullerMetadata:StatefulProperty ;
+		WeidmullerMetadata:hasNumberOfClusters
+		        "10"^^xsd:int .
+################>
+
+#3
+
+WeidmullerMetadata:Machine_59
+        a                 WeidmullerMetadata:MoldingMachine ;
+        IoTCore:hasModel  WeidmullerMetadata:MachineModel_59 .
+
+########>
+	WeidmullerMetadata:MachineModel_59
+		a                   I4.0:MachineType , owl:NamedIndividual ;
+		ssnOld:hasProperty  WeidmullerMetadata:_59_10 .
+
+################>
+		WeidmullerMetadata:_59_10
+			a       WeidmullerMetadata:StatefulProperty ;
+			WeidmullerMetadata:hasNumberOfClusters
+
+				"2"^^xsd:int .
+#4
+
+debs2017:Cycle_0  a           I4.0:Cycle ;
+        IoTCore:valueLiteral  "13"^^xsd:int .
+
+####
+

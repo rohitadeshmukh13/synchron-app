@@ -1,0 +1,38 @@
+Task description and solution
+
+The challenge of the task is to implement a basic solution that achieves semantic interoperability between the IoT platforms of company FW and SW. Company FW’s platform is built on FIWARE [1] while company SW’s platform uses semantic technologies offering a SPARQL interface. SW has granted FW access to their data. Your task is to implement a basic synchronization mechanism for sensor data that is ingested into SW’s platform and also made available to FW’s platform. Your solution should satisfy the following minimal requirements:
+ 
+1) Use the StreaML data set [2]. The data is further described at [3]
+>> Synchron App reads the input data from src/main/resources/Data directory and constructs the RDF Model based on it. The StreaML data can be placed here.
+
+2) Design a basic NGSI data model as used by the FIWARE IoT Broker[4] that you will use in the next step, i.e. define the entities, types, attributes and metadata.
+>> io.synchron.task1.model package includes the data model.
+
+3) Develop a simple adaptor that inserts the data of Step 1 into a local instance of the IoT Broker. Documentation about how to deploy the IoT Broker locally is available at [5]
+>> On startup, 
+  (a) the Synchron App reads the triples from all the files in src/main/resources/Data directory (along with the vocaulary triples, if any, in src/main/resources/Vocabulary directory), 
+  (b) constructs RDF model that includes these triples, 
+  (c) builds the request objects as used by the FIWARE IoT Broker
+  (d) and then synchronizes this sensor data with the IoT Broker by invoking its HTTP POST [http://localhost:8060/ngsi10/updateContext] endpoint.
+
+4) Demonstrate that your solution is correct, i.e. that for each sensor measurement in your RDF data set, there is a measurement in FW.
+>> screenshots/Demonstration_Challenge_Point4 folder demonstrates one such scenario. After setting up the environment and starting the app, such demonstrations can be performed. The file docs/samples.txt contains a few sample requests.
+
+
+Implementation of any of the following features is considered a plus:
+
+1) Updates: Provide a SPARQL endpoint for updating your data set that immediately results in an update of the IoT broker.
+>> The endpoint [http://localhost:8080/createEntity] has been provided for this purpose.
+
+2) Generic data sets: Demonstrate that your solution can work with certain other RDF data without modifying your code
+>> The Synchron App will work with any data placed in the src/main/resources/Data directory.
+
+3) Write a simple UI in which a user can specify a sensor and time interval and inspect the sensor data in a user friendly way. Your UI should be configurable to use either SW’s or FW’s platform
+>> The first part has been implemented. The page can accessed over [http://localhost:8080/sensorData.html]. The frontend, at the moment, is configured to query Synchron App's platform. Not sure if the JSON request as expected by the IoT Broker's platform can be constructed at all for the StreaML data set used.
+
+
+[1] https://www.fiware.org/
+[2] http://hobbitdata.informatik.uni-leipzig.de/StreamMachineLearning_1.0/
+[3] https://project-hobbit.eu/open-challenges/streaml-open-challenge_details/
+[4] http://aeronbroker.github.io/Aeron/
+[5] https://github.com/Aeronbroker/Aeron

@@ -1,0 +1,1339 @@
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix debs2017: <http://project-hobbit.eu/resources/debs2017#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix voaf:  <http://purl.org/vocommons/voaf#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix I4.0:  <http://www.agtinternational.com/ontologies/I4.0#> .
+@prefix ssn:   <http://www.w3.org/ns/ssn/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix WeidmullerMetadata: <http://www.agtinternational.com/ontologies/WeidmullerMetadata#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix DEBSAnalyticResults: <http://www.agtinternational.com/ontologies/DEBSAnalyticResults#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix ssnOld: <http://purl.oclc.org/NET/ssnx/ssn#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix IoTCore: <http://www.agtinternational.com/ontologies/IoTCore#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix sosa:  <http://www.w3.org/ns/sosa/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+debs2017:Observation_79
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_79 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_83 .
+
+debs2017:Output_39  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_39 .
+
+debs2017:Value_73  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "31.18"^^xsd:double .
+
+debs2017:Observation_49
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_49 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_53 .
+
+debs2017:Observation_109
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_109 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_113 .
+
+debs2017:Value_43  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "600.63"^^xsd:double .
+
+debs2017:Output_70  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_70 .
+
+debs2017:Observation_19
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_19 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_23 .
+
+debs2017:Observation_80
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_80 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_84 .
+
+debs2017:Value_101  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0A000" .
+
+debs2017:Value_13  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "15.46"^^xsd:double .
+
+debs2017:Output_40  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_40 .
+
+debs2017:Observation_50
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_50 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_54 .
+
+debs2017:Output_105  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_105 .
+
+debs2017:Value_6  a           I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.0"^^xsd:double .
+
+debs2017:Output_10  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_10 .
+
+debs2017:Observation_110
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_110 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_114 .
+
+debs2017:Value_85  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "33.79"^^xsd:double .
+
+debs2017:Observation_20
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_20 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_24 .
+
+debs2017:Value_55  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "85.36"^^xsd:double .
+
+debs2017:Output_82  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_82 .
+
+debs2017:Observation_92
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_92 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_96 .
+
+debs2017:Value_113  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "7.66"^^xsd:double .
+
+debs2017:Value_25  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "1.33"^^xsd:double .
+
+debs2017:Output_52  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_52 .
+
+debs2017:Observation_62
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_62 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_66 .
+
+debs2017:Output_22  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_22 .
+
+debs2017:Observation_32
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_32 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_36 .
+
+debs2017:Value_97  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "6.12"^^xsd:double .
+
+debs2017:Value_67  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "64.93"^^xsd:double .
+
+debs2017:Output_94  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_94 .
+
+debs2017:Output_7  a     ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_7 .
+
+debs2017:Value_37  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.0"^^xsd:double .
+
+debs2017:Output_64  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_64 .
+
+debs2017:Observation_74
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_74 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_78 .
+
+debs2017:Output_34  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_34 .
+
+debs2017:Observation_44
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_44 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_48 .
+
+debs2017:Observation_104
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_104 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_108 .
+
+debs2017:Observation_14
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_14 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_18 .
+
+debs2017:Value_79  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "1.24"^^xsd:double .
+
+debs2017:Output_76  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_76 .
+
+debs2017:Value_49  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "47.39"^^xsd:double .
+
+debs2017:Observation_86
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_86 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_90 .
+
+debs2017:Value_1  a           I4.0:NumberValue ;
+        IoTCore:valueLiteral  "4215.07"^^xsd:double .
+
+debs2017:Output_100  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_100 .
+
+debs2017:Value_107  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "41.6"^^xsd:double .
+
+debs2017:Value_19  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "26.32"^^xsd:double .
+
+debs2017:Output_46  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_46 .
+
+debs2017:Value_80  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "5.74"^^xsd:double .
+
+debs2017:Observation_56
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_56 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_60 .
+
+debs2017:Output_16  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_16 .
+
+debs2017:Observation_116
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_116 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_120 .
+
+debs2017:Value_50  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "8.5"^^xsd:double .
+
+debs2017:Observation_26
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_26 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_30 .
+
+WeidmullerMetadata:Machine_59
+        a                 WeidmullerMetadata:MoldingMachine ;
+        IoTCore:hasModel  WeidmullerMetadata:MachineModel_59 .
+
+debs2017:Value_20  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "28.09"^^xsd:double .
+
+debs2017:Output_88  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_88 .
+
+debs2017:Observation_98
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_98 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_102 .
+
+debs2017:Output_112  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_112 .
+
+debs2017:Output_58  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_58 .
+
+debs2017:Value_92  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "84.57"^^xsd:double .
+
+debs2017:Observation_68
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_68 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_72 .
+
+debs2017:Output_28  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_28 .
+
+debs2017:Observation_5
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_5 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_9 .
+
+debs2017:Value_62  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "6.2"^^xsd:double .
+
+debs2017:Observation_38
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_38 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_42 .
+
+debs2017:Output_2  a     ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_2 .
+
+debs2017:Value_32  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "261.0"^^xsd:double .
+
+debs2017:Value_74  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "1433.38"^^xsd:double .
+
+debs2017:Value_44  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "1632.64"^^xsd:double .
+
+debs2017:Output_71  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_71 .
+
+debs2017:Observation_81
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_81 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_85 .
+
+debs2017:Value_102  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.36"^^xsd:double .
+
+debs2017:Value_14  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.0"^^xsd:double .
+
+debs2017:Output_41  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_41 .
+
+debs2017:Observation_51
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_51 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_55 .
+
+debs2017:Output_106  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_106 .
+
+debs2017:Value_7  a           I4.0:NumberValue ;
+        IoTCore:valueLiteral  "9.44"^^xsd:double .
+
+debs2017:Output_11  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_11 .
+
+debs2017:Observation_111
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_111 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_115 .
+
+debs2017:Observation_21
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_21 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_25 .
+
+debs2017:Value_86  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "250.16"^^xsd:double .
+
+debs2017:Value_56  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "10.17"^^xsd:double .
+
+debs2017:Output_83  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_83 .
+
+debs2017:Observation_93
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_93 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_97 .
+
+debs2017:Value_114  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "78.09"^^xsd:double .
+
+debs2017:Value_26  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.43"^^xsd:double .
+
+debs2017:Output_53  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_53 .
+
+debs2017:Observation_63
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_63 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_67 .
+
+debs2017:Output_23  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_23 .
+
+debs2017:Observation_0
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_0 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_12 , WeidmullerMetadata:_59_4 .
+
+debs2017:Value_98  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "1370.0"^^xsd:double .
+
+debs2017:Observation_33
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_33 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_37 .
+
+debs2017:Value_68  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "28.96"^^xsd:double .
+
+debs2017:Output_95  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_95 .
+
+debs2017:Output_8  a     ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_8 .
+
+debs2017:Value_38  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "98.13"^^xsd:double .
+
+debs2017:Output_65  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_65 .
+
+debs2017:Observation_75
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_75 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_79 .
+
+debs2017:Output_35  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_35 .
+
+debs2017:Observation_45
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_45 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_49 .
+
+debs2017:Observation_105
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_105 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_109 .
+
+debs2017:Observation_15
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_15 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_19 .
+
+debs2017:Output_77  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_77 .
+
+debs2017:Observation_87
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_87 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_91 .
+
+debs2017:Output_101  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_101 .
+
+debs2017:Value_2  a           I4.0:NumberValue ;
+        IoTCore:valueLiteral  "710.77"^^xsd:double .
+
+debs2017:Value_108  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "15.33"^^xsd:double .
+
+debs2017:Output_47  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_47 .
+
+debs2017:Value_81  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "56.0"^^xsd:double .
+
+debs2017:Observation_57
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_57 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_61 .
+
+debs2017:Output_17  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_17 .
+
+debs2017:Value_51  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "11.0"^^xsd:double .
+
+debs2017:Observation_27
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_27 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_31 .
+
+debs2017:Value_21  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "41.57"^^xsd:double .
+
+debs2017:Output_89  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_89 .
+
+debs2017:Observation_99
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_99 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_103 .
+
+debs2017:Output_113  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_113 .
+
+debs2017:Output_59  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_59 .
+
+debs2017:Value_93  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "16.01"^^xsd:double .
+
+debs2017:Observation_69
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_69 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_73 .
+
+debs2017:Cycle_0  a           I4.0:Cycle ;
+        IoTCore:valueLiteral  "13"^^xsd:int .
+
+debs2017:Observation_6
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_6 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_10 .
+
+debs2017:Output_29  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_29 .
+
+debs2017:Value_63  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "2110.7"^^xsd:double .
+
+debs2017:Output_90  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_90 .
+
+debs2017:Observation_39
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_39 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_43 .
+
+debs2017:Output_3  a     ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_3 .
+
+debs2017:Value_33  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "19.9"^^xsd:double .
+
+debs2017:Output_60  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_60 .
+
+debs2017:Observation_70
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_70 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_74 .
+
+debs2017:Output_30  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_30 .
+
+debs2017:Observation_40
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_40 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_44 .
+
+debs2017:Observation_100
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_100 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_104 .
+
+debs2017:Value_75  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.0"^^xsd:double .
+
+debs2017:Observation_10
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_10 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_14 .
+
+debs2017:Value_45  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "48.71"^^xsd:double .
+
+debs2017:Output_72  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_72 .
+
+debs2017:Observation_82
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_82 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_86 .
+
+debs2017:Value_103  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "1.57"^^xsd:double .
+
+debs2017:Value_15  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.0"^^xsd:double .
+
+debs2017:Output_42  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_42 .
+
+debs2017:Observation_52
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_52 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_56 .
+
+debs2017:Output_107  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_107 .
+
+debs2017:Value_8  a           I4.0:NumberValue ;
+        IoTCore:valueLiteral  "14.98"^^xsd:double .
+
+debs2017:Output_12  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_12 .
+
+debs2017:Observation_112
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_112 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_116 .
+
+debs2017:Observation_22
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_22 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_26 .
+
+debs2017:Value_87  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "1208.47"^^xsd:double .
+
+debs2017:ObservationGroup_0
+        a                             I4.0:MoldingMachineObservationGroup ;
+        ssnOld:observationResultTime  debs2017:Timestamp_0 ;
+        I4.0:contains                 debs2017:Observation_33 , debs2017:Observation_42 , debs2017:Observation_99 , debs2017:Observation_78 , debs2017:Observation_24 , debs2017:Observation_80 , debs2017:Observation_73 , debs2017:Observation_21 , debs2017:Observation_31 , debs2017:Observation_3 , debs2017:Observation_19 , debs2017:Observation_97 , debs2017:Observation_26 , debs2017:Observation_93 , debs2017:Observation_4 , debs2017:Observation_30 , debs2017:Observation_96 , debs2017:Observation_59 , debs2017:Observation_101 , debs2017:Observation_1 , debs2017:Observation_17 , debs2017:Observation_45 , debs2017:Observation_55 , debs2017:Observation_63 , debs2017:Observation_6 , debs2017:Observation_13 , debs2017:Observation_46 , debs2017:Observation_64 , debs2017:Observation_16 , debs2017:Observation_50 , debs2017:Observation_60 , debs2017:Observation_43 , debs2017:Observation_53 , debs2017:Observation_112 , debs2017:Observation_35 , debs2017:Observation_34 , debs2017:Observation_75 , debs2017:Observation_27 , debs2017:Observation_37 , debs2017:Observation_110 , debs2017:Observation_71 , debs2017:Observation_105 , debs2017:Observation_89 , debs2017:Observation_28 , debs2017:Observation_66 , debs2017:Observation_102 , debs2017:Observation_74 , debs2017:Observation_84 , debs2017:Observation_32 , debs2017:Observation_91 , debs2017:Observation_70 , debs2017:Observation_98 , debs2017:Observation_7 , debs2017:Observation_103 , debs2017:Observation_94 , debs2017:Observation_47 , debs2017:Observation_57 , debs2017:Observation_8 , debs2017:Observation_100 , debs2017:Observation_61 , debs2017:Observation_11 , debs2017:Observation_18 , debs2017:Observation_56 , debs2017:Observation_49 , debs2017:Observation_14 , debs2017:Observation_51 , debs2017:Observation_114 , debs2017:Observation_109 , debs2017:Observation_54 , debs2017:Observation_88 , debs2017:Observation_113 , debs2017:Observation_36 , debs2017:Observation_116 , debs2017:Observation_106 , debs2017:Observation_29 , debs2017:Observation_39 , debs2017:Observation_67 , debs2017:Observation_77 , debs2017:Observation_85 , debs2017:Observation_25 , debs2017:Observation_107 , debs2017:Observation_81 , debs2017:Observation_68 , debs2017:Observation_86 , debs2017:Observation_76 , debs2017:Observation_38 , debs2017:Observation_111 , debs2017:Observation_82 , debs2017:Observation_72 , debs2017:Observation_22 , debs2017:Observation_65 , debs2017:Observation_9 , debs2017:Observation_40 , debs2017:Observation_5 , debs2017:Observation_92 , debs2017:Observation_95 , debs2017:Observation_20 , debs2017:Observation_58 , debs2017:Observation_2 , debs2017:Observation_12 , debs2017:Observation_90 , debs2017:Observation_15 , debs2017:Observation_48 , debs2017:Observation_0 , debs2017:Observation_44 , debs2017:Observation_52 , debs2017:Observation_62 , debs2017:Observation_115 , debs2017:Observation_108 , debs2017:Observation_10 , debs2017:Observation_69 , debs2017:Observation_79 , debs2017:Observation_41 , debs2017:Observation_87 , debs2017:Observation_104 , debs2017:Observation_83 , debs2017:Observation_23 ;
+        I4.0:machine                  WeidmullerMetadata:Machine_59 ;
+        I4.0:observedCycle            debs2017:Cycle_0 .
+
+debs2017:Value_57  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "66.83"^^xsd:double .
+
+debs2017:Output_84  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_84 .
+
+debs2017:Observation_94
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_94 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_98 .
+
+debs2017:Value_115  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "63.7"^^xsd:double .
+
+debs2017:Value_27  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.1"^^xsd:double .
+
+debs2017:Output_54  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_54 .
+
+debs2017:Observation_64
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_64 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_68 .
+
+debs2017:Output_24  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_24 .
+
+debs2017:Observation_1
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_1 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_5 .
+
+debs2017:Observation_34
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_34 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_38 .
+
+debs2017:Value_99  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.0"^^xsd:double .
+
+debs2017:Value_69  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "79.17"^^xsd:double .
+
+debs2017:Output_96  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_96 .
+
+debs2017:Output_9  a     ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_9 .
+
+debs2017:Value_39  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "94.23"^^xsd:double .
+
+debs2017:Output_66  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_66 .
+
+debs2017:Observation_76
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_76 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_80 .
+
+debs2017:Output_36  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_36 .
+
+debs2017:Value_70  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "12.36"^^xsd:double .
+
+debs2017:Observation_46
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_46 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_50 .
+
+debs2017:Observation_106
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_106 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_110 .
+
+debs2017:Value_40  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "85.07"^^xsd:double .
+
+debs2017:Observation_16
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_16 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_20 .
+
+debs2017:Value_10  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "30.56"^^xsd:double .
+
+debs2017:Output_78  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_78 .
+
+debs2017:Observation_88
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_88 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_92 .
+
+debs2017:Output_102  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_102 .
+
+debs2017:Value_3  a           I4.0:NumberValue ;
+        IoTCore:valueLiteral  "3276.0"^^xsd:double .
+
+debs2017:Value_109  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "79.68"^^xsd:double .
+
+debs2017:Output_48  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_48 .
+
+debs2017:Value_82  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "15.81"^^xsd:double .
+
+debs2017:Observation_58
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_58 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_62 .
+
+debs2017:Output_18  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_18 .
+
+debs2017:Value_52  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "19.91"^^xsd:double .
+
+debs2017:Observation_28
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_28 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_32 .
+
+debs2017:Value_110  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "28.76"^^xsd:double .
+
+debs2017:Value_22  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "1.16"^^xsd:double .
+
+debs2017:Timestamp_0  a       IoTCore:Timestamp ;
+        IoTCore:valueLiteral  "2017-01-01T01:00:01+01:00"^^xsd:dateTime .
+
+debs2017:Output_114  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_114 .
+
+debs2017:Value_94  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "12.62"^^xsd:double .
+
+debs2017:Observation_7
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_7 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_11 .
+
+debs2017:Value_64  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "736.75"^^xsd:double .
+
+debs2017:Output_91  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_91 .
+
+debs2017:Output_4  a     ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_4 .
+
+debs2017:Value_34  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "33.74"^^xsd:double .
+
+debs2017:Output_61  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_61 .
+
+debs2017:Observation_71
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_71 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_75 .
+
+debs2017:Output_31  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_31 .
+
+debs2017:Observation_41
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_41 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_45 .
+
+debs2017:Observation_101
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_101 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_105 .
+
+debs2017:Observation_11
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_11 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_15 .
+
+debs2017:Value_76  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "2.37"^^xsd:double .
+
+debs2017:Value_46  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "654.91"^^xsd:double .
+
+debs2017:Output_73  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_73 .
+
+debs2017:Observation_83
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_83 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_87 .
+
+debs2017:Value_104  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "45.0"^^xsd:double .
+
+debs2017:Value_16  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "55.21"^^xsd:double .
+
+debs2017:Output_43  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_43 .
+
+debs2017:Observation_53
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_53 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_57 .
+
+debs2017:Output_108  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_108 .
+
+debs2017:Value_9  a           I4.0:NumberValue ;
+        IoTCore:valueLiteral  "1.31"^^xsd:double .
+
+debs2017:Output_13  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_13 .
+
+debs2017:Observation_113
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_113 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_117 .
+
+debs2017:Value_88  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "42.95"^^xsd:double .
+
+debs2017:Observation_23
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_23 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_27 .
+
+debs2017:Value_58  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "91.93"^^xsd:double .
+
+debs2017:Output_85  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_85 .
+
+WeidmullerMetadata:_59_10
+        a       WeidmullerMetadata:StatefulProperty ;
+        WeidmullerMetadata:hasNumberOfClusters
+                "2"^^xsd:int .
+
+debs2017:Observation_95
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_95 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_99 .
+
+debs2017:Value_116  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "81.88"^^xsd:double .
+
+debs2017:Output_55  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_55 .
+
+debs2017:Value_28  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "1.2"^^xsd:double .
+
+debs2017:Observation_65
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_65 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_69 .
+
+debs2017:Output_25  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_25 .
+
+debs2017:Observation_2
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_2 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_6 .
+
+debs2017:Observation_35
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_35 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_39 .
+
+debs2017:Output_97  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_97 .
+
+debs2017:Output_67  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_67 .
+
+debs2017:Observation_77
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_77 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_81 .
+
+debs2017:Output_37  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_37 .
+
+debs2017:Value_71  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "31.89"^^xsd:double .
+
+debs2017:Observation_47
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_47 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_51 .
+
+debs2017:Observation_107
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_107 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_111 .
+
+debs2017:Value_41  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "75.94"^^xsd:double .
+
+debs2017:Observation_17
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_17 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_21 .
+
+debs2017:Value_11  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "51.47"^^xsd:double .
+
+debs2017:Output_79  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_79 .
+
+debs2017:Observation_89
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_89 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_93 .
+
+debs2017:Output_103  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_103 .
+
+debs2017:Value_4  a           I4.0:NumberValue ;
+        IoTCore:valueLiteral  "450.57"^^xsd:double .
+
+debs2017:Output_49  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_49 .
+
+debs2017:Value_83  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "36.57"^^xsd:double .
+
+debs2017:Observation_59
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_59 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_63 .
+
+debs2017:Output_19  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_19 .
+
+debs2017:Value_53  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "34.11"^^xsd:double .
+
+debs2017:Output_80  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_80 .
+
+debs2017:Observation_29
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_29 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_33 .
+
+debs2017:Observation_90
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_90 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_94 .
+
+WeidmullerMetadata:MachineModel_59
+        a                   owl:NamedIndividual , I4.0:MachineType ;
+        ssnOld:hasProperty  WeidmullerMetadata:_59_10 .
+
+debs2017:Value_111  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "91.2"^^xsd:double .
+
+debs2017:Value_23  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "5.16"^^xsd:double .
+
+debs2017:Output_50  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_50 .
+
+debs2017:Observation_60
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_60 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_64 .
+
+debs2017:Output_115  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_115 .
+
+debs2017:Output_20  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_20 .
+
+debs2017:Observation_30
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_30 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_34 .
+
+debs2017:Value_95  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "838.12"^^xsd:double .
+
+debs2017:Observation_8
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_8 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_12 .
+
+debs2017:Value_65  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "16.07"^^xsd:double .
+
+debs2017:Output_92  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_92 .
+
+debs2017:Output_5  a     ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_5 .
+
+debs2017:Value_35  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.0"^^xsd:double .
+
+debs2017:Output_62  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_62 .
+
+debs2017:Observation_72
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_72 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_76 .
+
+debs2017:Output_32  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_32 .
+
+debs2017:Observation_42
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_42 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_46 .
+
+debs2017:Observation_102
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_102 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_106 .
+
+debs2017:Value_77  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.24"^^xsd:double .
+
+debs2017:Observation_12
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_12 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_16 .
+
+debs2017:Value_47  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "71.6"^^xsd:double .
+
+debs2017:Output_74  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_74 .
+
+debs2017:Observation_84
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_84 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_88 .
+
+debs2017:Value_105  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "41.69"^^xsd:double .
+
+debs2017:Value_17  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "1.0"^^xsd:double .
+
+debs2017:Output_44  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_44 .
+
+debs2017:Observation_54
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_54 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_58 .
+
+debs2017:Output_109  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_109 .
+
+debs2017:Output_14  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_14 .
+
+debs2017:Observation_114
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_114 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_118 .
+
+debs2017:Observation_24
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_24 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_28 .
+
+debs2017:Value_89  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "76.69"^^xsd:double .
+
+debs2017:Value_59  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "2.88"^^xsd:double .
+
+debs2017:Output_86  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_86 .
+
+debs2017:Observation_96
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_96 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_100 .
+
+debs2017:Output_110  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_110 .
+
+debs2017:Value_29  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "272.0"^^xsd:double .
+
+debs2017:Output_56  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_56 .
+
+debs2017:Value_90  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "47.37"^^xsd:double .
+
+debs2017:Observation_66
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_66 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_70 .
+
+debs2017:Output_26  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_26 .
+
+debs2017:Observation_3
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_3 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_7 .
+
+debs2017:Value_60  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "86.55"^^xsd:double .
+
+debs2017:Observation_36
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_36 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_40 .
+
+debs2017:Output_0  a     ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_0 .
+
+debs2017:Value_30  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "267.74"^^xsd:double .
+
+debs2017:Output_98  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_98 .
+
+debs2017:Output_68  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_68 .
+
+debs2017:Observation_78
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_78 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_82 .
+
+debs2017:Output_38  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_38 .
+
+debs2017:Value_72  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "5.9"^^xsd:double .
+
+debs2017:Observation_48
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_48 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_52 .
+
+debs2017:Observation_108
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_108 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_112 .
+
+debs2017:Value_42  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "6.98"^^xsd:double .
+
+debs2017:Observation_18
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_18 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_22 .
+
+debs2017:Value_100  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "40.59"^^xsd:double .
+
+debs2017:Value_12  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.0"^^xsd:double .
+
+debs2017:Output_104  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_104 .
+
+debs2017:Value_5  a           I4.0:NumberValue ;
+        IoTCore:valueLiteral  "157.69"^^xsd:double .
+
+debs2017:Value_84  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.0"^^xsd:double .
+
+debs2017:Value_54  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "56.17"^^xsd:double .
+
+debs2017:Output_81  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_81 .
+
+debs2017:Observation_91
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_91 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_95 .
+
+debs2017:Value_112  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "43.14"^^xsd:double .
+
+debs2017:Value_24  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "0.58"^^xsd:double .
+
+debs2017:Output_51  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_51 .
+
+debs2017:Observation_61
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_61 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_65 .
+
+debs2017:Output_116  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_116 .
+
+debs2017:Output_21  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_21 .
+
+debs2017:Value_96  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "3254.78"^^xsd:double .
+
+debs2017:Observation_31
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_31 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_35 .
+
+debs2017:Observation_9
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_9 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_13 .
+
+debs2017:Value_66  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "78.03"^^xsd:double .
+
+debs2017:Output_93  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_93 .
+
+debs2017:Output_6  a     ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_6 .
+
+debs2017:Value_36  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "17.55"^^xsd:double .
+
+debs2017:Output_63  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_63 .
+
+debs2017:Observation_73
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_73 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_77 .
+
+debs2017:Output_33  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_33 .
+
+debs2017:Observation_43
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_43 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_47 .
+
+debs2017:Observation_103
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_103 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_107 .
+
+debs2017:Observation_13
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_13 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_17 .
+
+debs2017:Value_78  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "20.71"^^xsd:double .
+
+debs2017:Value_48  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "8.15"^^xsd:double .
+
+debs2017:Output_75  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_75 .
+
+debs2017:Observation_85
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_85 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_89 .
+
+debs2017:Value_0  a           I4.0:NumberValue ;
+        IoTCore:valueLiteral  "9433.11"^^xsd:double .
+
+debs2017:Value_106  a         I4.0:NumberValue ;
+        IoTCore:valueLiteral  "54.52"^^xsd:double .
+
+debs2017:Value_18  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "-0.05"^^xsd:double .
+
+debs2017:Output_45  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_45 .
+
+debs2017:Observation_55
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_55 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_59 .
+
+debs2017:Output_15  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_15 .
+
+debs2017:Observation_115
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_115 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_119 .
+
+debs2017:Observation_25
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_25 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_29 .
+
+debs2017:Output_87  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_87 .
+
+WeidmullerMetadata:_59_12
+        a       WeidmullerMetadata:StatefulProperty ;
+        WeidmullerMetadata:hasNumberOfClusters
+                "10"^^xsd:int .
+
+debs2017:Observation_97
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_97 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_101 .
+
+debs2017:Output_111  a   ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_111 .
+
+debs2017:Output_57  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_57 .
+
+debs2017:Value_91  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "75.7"^^xsd:double .
+
+debs2017:Observation_67
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_67 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_71 .
+
+debs2017:Output_27  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_27 .
+
+debs2017:Observation_4
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_4 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_8 .
+
+debs2017:Value_61  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "82.82"^^xsd:double .
+
+debs2017:Observation_37
+        a                         I4.0:MoldingMachineObservation ;
+        ssnOld:observationResult  debs2017:Output_37 ;
+        ssnOld:observedProperty   WeidmullerMetadata:_59_41 .
+
+debs2017:Output_1  a     ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_1 .
+
+debs2017:Value_31  a          I4.0:NumberValue ;
+        IoTCore:valueLiteral  "255.0"^^xsd:double .
+
+debs2017:Output_99  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_99 .
+
+debs2017:Output_69  a    ssnOld:SensorOutput ;
+        ssnOld:hasValue  debs2017:Value_69 .

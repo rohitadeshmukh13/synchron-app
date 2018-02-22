@@ -1,0 +1,13 @@
+#Metadata
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix WeidmullerMetadata: <http://www.agtinternational.com/ontologies/WeidmullerMetadata#> .
+@prefix IoTCore: <http://www.agtinternational.com/ontologies/IoTCore#> .
+@prefix I4.0: <http://www.agtinternational.com/ontologies/I4.0#> .
+
+@prefix ssnOld: <http://purl.oclc.org/NET/ssnx/ssn#> .
+
+#Data
+@prefix debs2017: <http://project-hobbit.eu/resources/debs2017#> .
+
+#Anomaly
+@prefix DEBSAnalyticResults: <http://www.agtinternational.com/ontologies/DEBSAnalyticResults#> .

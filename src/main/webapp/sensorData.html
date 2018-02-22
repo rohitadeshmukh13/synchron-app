@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Synchron App">
+<meta name="author" content="Rohit Deshmukh">
+
+<title>Synchron App</title>
+
+<!-- js -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="sensorDataController.js"></script>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+</head>
+
+<body class="bg-light" ng-app="SynchronApp" ng-controller="sensorDataController">
+
+	<div class="container">
+		<div class="py-5 text-center">
+			<h1>Synchron App</h1>
+			<p class="lead">Select the application to be queried for the sensor
+				data and enter the parameters. Timestamp is of type:
+				2017-01-01T01:00:01+01:00</p>
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-8 order-md-1">
+
+				<h4 class="mb-3">Application</h4>
+
+				<div class="d-block my-2">
+					<div class="custom-control custom-radio">
+						<input id="synchron" ng-model="formData.app" name="synchron"
+							type="radio" class="custom-control-input" checked required>
+						<label class="custom-control-label" for="synchron">Synchron
+							App</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input id="broker" ng-model="formData.app" name="broker"
+							type="radio" class="custom-control-input" required disabled> 
+							<label class="custom-control-label" for="broker">IoT Broker</label>
+					</div>
+				</div>
+
+				<div class="mb-3">
+					<label for="address">Sensor Id</label> <input type="text"
+						ng-model="formData.sensor" class="form-control" id="sensorId"
+						placeholder="http://www.agtinternational.com/ontologies/WeidmullerMetadata#Machine_59"
+						required>
+				</div>
+
+				<div class="mb-3">
+					<label for="address">Lower Timestamp</label> <input type="text"
+						ng-model="formData.timestamp1" class="form-control" id="address"
+						placeholder="2016-01-01T01:00:01+01:00" required>
+				</div>
+
+				<div class="mb-3">
+					<label for="address">Higher Timestamp</label> <input type="text"
+						ng-model="formData.timestamp2" class="form-control" id="address"
+						placeholder="2018-01-01T01:00:01+01:00" required>
+				</div>
+
+				<hr class="mb-4">
+				<button class="btn btn-primary btn btn-block" type="submit"
+					ng-click="getSensorData()">Search</button>
+
+
+				<div class="dataTable_wrapper" ng-show="displaySensorData">
+				<br><br><br>
+				
+				<h4 class="mb-3">Sensor Data</h4>
+				
+					<table class="table table-striped table-bordered table-hover"
+						id="observations">
+						<thead>
+							<tr>
+								<th>Sr. No.</th>
+								<th>Observed Property</th>
+								<th>Observation Result</th>
+							</tr>
+						</thead>
+						<tbody ng-repeat="sensorObservation in sensorObservations">
+							<tr class="odd gradeX">
+
+								<td>{{$index + 1}}</td>
+								<td>{{sensorObservation.observedProperty}}</td>
+								<td>{{sensorObservation.observationResult}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+			</div>
+		</div>
+
+		<footer class="my-5 pt-5 text-muted text-center text-small">
+			<p class="mb-1">&copy; 2017-2018 Synchron</p>
+			<ul class="list-inline">
+				<li class="list-inline-item"><a href="#">Terms</a></li>
+				<li class="list-inline-item"><a href="#">Support</a></li>
+			</ul>
+		</footer>
+	</div>
+
+
+</body>
+</html>
